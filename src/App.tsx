@@ -5,7 +5,6 @@ function App() {
     <CinqueQueensPage
       coverSrc="/cinque-queens-weekend/cinque_terre_bw.png"
       groupSrc="/cinque-queens-weekend/group_photo_bw.png"
-      pdfHref="/cinque-queens-weekend/Cinque_Queens_Weekend_Revised.pdf"
     />
   );
 }

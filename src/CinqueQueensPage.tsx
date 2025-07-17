@@ -1,17 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
-// Props optional: allow caller to override asset paths & pdf URL
+// Props optional: allow caller to override asset paths
 interface CinqueQueensPageProps {
     coverSrc?: string;          // header illustration (Cinque Terre BW)
     groupSrc?: string;          // group photo BW
-    pdfHref?: string;           // link to downloadable PDF
 }
 
 export default function CinqueQueensPage({
     coverSrc = "/cinque_terre_bw.jpg",
     groupSrc = "/group_photo_bw.jpg",
-    pdfHref = "/Cinque_Queens_Weekend_Full_Mims.pdf",
 }: CinqueQueensPageProps) {
     return (
         <div className="min-h-screen bg-white text-black flex flex-col items-center w-full">
