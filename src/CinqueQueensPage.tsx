@@ -38,7 +38,7 @@ export default function CinqueQueensPage({
                     <CardContent className="p-6 space-y-8">
                         <section className="text-center">
                             <h2 className="text-2xl font-semibold mb-2">Le Programme</h2>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-sm text-gray-600">
                                 Weekend entre queens aux Cinque Terre – balades, baignades & spritz.
                             </p>
                         </section>
@@ -91,13 +91,15 @@ export default function CinqueQueensPage({
                             </ul>
                         </section>
 
-                        <div className="pt-4 text-center">
-                            <Button asChild>
-                                <a href={pdfHref} target="_blank" rel="noopener noreferrer">
-                                    📄 Télécharger le PDF complet
-                                </a>
-                            </Button>
-                        </div>
+                        {pdfHref && (
+                            <div className="pt-4 text-center">
+                                <Button asChild>
+                                    <a href={pdfHref} target="_blank" rel="noopener noreferrer">
+                                        📄 Télécharger le PDF complet
+                                    </a>
+                                </Button>
+                            </div>
+                        )}
                     </CardContent>
                 </Card>
 
@@ -115,7 +117,7 @@ export default function CinqueQueensPage({
                 </section>
             </main>
 
-            <footer className="w-full py-8 text-center text-xs text-muted-foreground">
+            <footer className="w-full py-8 text-center text-xs text-gray-600">
                 Cinque Queens · Juillet 2025 · Love & Soleil
             </footer>
         </div>
