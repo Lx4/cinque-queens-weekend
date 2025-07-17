@@ -33,6 +33,16 @@ export default function CinqueQueensPage({
             </header>
 
             <main className="w-full max-w-3xl mx-auto px-4 py-10 space-y-12">
+                {/* Introduction */}
+                <section className="text-center space-y-4">
+                    <p className="text-lg leading-relaxed text-gray-800 max-w-2xl mx-auto">
+                        Du 18 au 20 juillet 2025, <strong>Banana</strong>, <strong>Mimo</strong>, <strong>Mamathildon</strong>, <strong>Mel Tisinoi</strong> et <strong>Rhalice</strong> se retrouvent ENFIN pour un week-end de rêve aux Cinque Terre. Belles balades, baignades, spritz bien frais, resto quali et soirées à rigoler fort... tout est réuni pour se créer des souvenirs trop mims entre copines qu'on ne voit pas assez souvent.
+                    </p>
+                    <p className="text-xl font-semibold text-black italic">
+                        Let's go les queens. 👑
+                    </p>
+                </section>
+
                 {/* Programme Card */}
                 <Card className="w-full border-black/10 shadow-sm">
                     <CardContent className="p-6 space-y-8">
@@ -91,15 +101,6 @@ export default function CinqueQueensPage({
                             </ul>
                         </section>
 
-                        {pdfHref && (
-                            <div className="pt-4 text-center">
-                                <Button asChild>
-                                    <a href={pdfHref} target="_blank" rel="noopener noreferrer">
-                                        📄 Télécharger le PDF complet
-                                    </a>
-                                </Button>
-                            </div>
-                        )}
                     </CardContent>
                 </Card>
 
